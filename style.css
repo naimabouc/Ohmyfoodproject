@@ -129,11 +129,11 @@ header .header__logo {
 }
 
 .section__two {
-  padding: 50px 180px 50px 180px;
+  padding: 50px 130px 50px 130px;
 }
 
 .section__menus {
-  padding: 20px 180px 0px 180px;
+  padding: 20px 130px 0px 130px;
   background-color: #F6F6F6;
 }
 
@@ -354,26 +354,32 @@ footer {
   margin-left: 18%;
   filter: drop-shadow(0px 4px 15px rgba(0, 0, 0, 0.1));
   display: flex;
-  /*** Media Queries***/
+  overflow: hidden;
 }
-.menu__card:hover {
-  margin-right: 3rem;
+.menu__card:hover .button__check {
+  margin: 0;
+  transition: all 250ms;
+  cursor: pointer;
 }
-.menu__card .menu__description {
+
+.menu__description {
   display: flex;
   flex-direction: column;
   flex: 2;
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
+  cursor: pointer;
 }
-.menu__card .menu__card--h2 {
+
+.menu__card--h2 {
   font-size: 18px;
   margin-left: 2%;
   overflow: hidden;
   text-overflow: ellipsis;
 }
-.menu__card .menu__card--h3 {
+
+.menu__card--h3 {
   font-size: 15px;
   font-weight: 300;
   margin-left: 2%;
@@ -381,17 +387,19 @@ footer {
   overflow: hidden;
   text-overflow: ellipsis;
 }
-.menu__card .menu__card--price {
+
+.menu__card--price {
   font-size: 15px;
   font-weight: 700;
   margin-left: auto;
   position: relative;
   margin-top: 7%;
 }
-.menu__card .menu__card--price:hover {
-  margin-right: 0;
+.menu__card--price:hover {
+  cursor: pointer;
 }
-.menu__card .button__check {
+
+.button__check {
   border-radius: 0px 15px 15px 0px;
   left: 100%;
   background: #99E2D0;
@@ -402,88 +410,102 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  opacity: 0;
 }
-.menu__card .button__check:hover {
-  opacity: 1;
-  margin-right: 0;
-}
-.menu__card .button__check i {
+
+.button__check i {
   color: white;
   font-size: 20px;
   border-radius: 15px;
 }
-.menu__card .check {
+
+.check {
   color: white;
   padding: 20px 0 0 20px;
 }
+
+/*** Media Queries***/
 @media (max-width: 1024px) {
-  .menu__card .section__two {
-    margin-left: 3vh;
-    margin-right: 3vh;
+  .section__two {
+    margin: 3vh 3vh;
+    padding: 0;
   }
-  .menu__card .section__three {
-    margin-left: 3vh;
+  .section__restaurant {
+    margin-left: 10%;
+    margin-right: 10%;
   }
-  .menu__card .menu__card {
-    width: 81%;
+  .section__menus {
+    padding: 30px 30px 0px 30px;
+  }
+  .menus__card {
+    gap: 70px;
+  }
+  .menu__card {
+    width: 80%;
     margin-left: 10%;
   }
 }
 @media (max-width: 767.98px) {
-  .menu__card .section__one .section__title-h1 {
+  .section__one .section__title--h1 {
     font-size: 24px;
   }
-  .menu__card .section__two .section__button {
+  .section__two .section__button {
     display: flex;
     flex-direction: column;
   }
-  .menu__card .section__button--main {
+  .section__button--main {
     width: 100%;
   }
-  .menu__card .section__button--number {
+  .section__button--number {
     top: 3rem;
     left: -2%;
   }
-  .menu__card .section__menus {
+  .section__menus {
     margin-left: 0vh;
   }
-  .menu__card .card__img--new {
+  .card__img--new {
     position: relative;
     bottom: -12vw;
     left: 74%;
   }
-  .menu__card .menus__card {
+  .menus__card {
     display: grid;
     grid-template-columns: 1fr;
+    gap: 20px;
   }
-  .menu__card .article__img--new {
+  .card__three {
+    margin-top: 0;
+  }
+  .article__img--new {
     position: relative;
     bottom: -15vw;
     left: 74%;
   }
-  .menu__card footer {
+  footer {
     display: flex;
     flex-direction: column;
   }
-  .menu__card .footer__main {
+  .footer__logo {
+    width: 139px;
+    height: 27px;
+  }
+  .footer__main {
     display: flex;
     flex-direction: column;
   }
-  .menu__card .footer__mentions {
+  .footer__mentions {
     display: flex;
     flex-direction: column;
   }
-  .menu__card .section__restaurant {
+  .section__restaurant {
     margin-left: 0;
     margin-right: 0;
     width: 100%;
   }
-  .menu__card .menu__card {
+  .menu__card {
     width: 90%;
     margin-left: 5%;
   }
-  .menu__card .menu__name {
+  .menu__name {
     margin-left: 5%;
   }
 }
