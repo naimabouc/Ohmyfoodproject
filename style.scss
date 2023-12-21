@@ -45,13 +45,12 @@
         filter: drop-shadow(0px 4px 15px rgba(0, 0, 0, 0.1));  
     }
     
-    @mixin heart {
-        border-style: 1px solid black;
-        
+    @mixin heart { 
         background-image: linear-gradient(to top, #9356DC 20%, #FF79DA 100%);
-        /*** background-clip: text;
+        color: transparent;
+        background-clip: text;
         -webkit-background-clip: text;
-        -moz-background-image: $color-gradient;  /***/
+        -moz-background-image: $color-gradient;  
         
     }
 
@@ -257,7 +256,7 @@
 
     .fas {
         @include heart;
-        opacity: 1;
+        opacity: 0;
         transition: all 200ms;
         &:hover {
             opacity: 1;
@@ -285,15 +284,26 @@
                 margin-right: 31px;
                 display: flex;
                 gap: 15px;
+                align-items: baseline;
+                .icon__ustensils {
+                    flex-direction: row;
+                    display: flex;
+                    align-items: baseline;
+                    gap: 15px;
+                    
+                }
             }
         }
-    }    
+    }   
+    .icon__handshake {
+        display: contents;
+    } 
 
     .footer__mentions {
         display: flex;
         align-items: baseline;
         margin-right: 96px;
-        gap: 7px;
+        gap: 15px;
         .contact {
             color: white;
         }
@@ -320,15 +330,22 @@
             margin-top: -40px;
             padding: 10px;
             display: flex;
+            justify-content: center;
+            align-items: center;
             .section__menu--title--h1 {
-                margin: auto;
+                margin-right: 2%;
                 font-family: 'Shrikhand', serif;
                 font-size: 28px;
                 font-style: italic;
             }
     }
     .animation__heart .fas {
-        transform: translateX(-112%);
+        transform: translateX(-100%);
+        position: absolute;
+        opacity: 0;
+        &:hover {
+            opacity: 1;
+        }
     }
     .section__entrees {
         animation: apparition 1s ease-in;
@@ -445,7 +462,8 @@
             width: 80%;
             margin-left: 10%;
         }
-    }   
+    }
+     
 
     @media (max-width: 767.98px) {
         .section__one .section__title--h1 {
@@ -455,7 +473,7 @@
         }  
         .section__title--h2 {
             margin-left: 8px;
-            }
+        }
 
         .section__two .section__button {
             display: flex;
@@ -466,8 +484,8 @@
             .section__button--number {
                 top: 3rem;
                 left: -2%;
-                    }
-                
+                    
+                }
             }
 
         .section__menus {
@@ -487,7 +505,20 @@
             .card__three {
                 margin-top: 0;
             }
-        }
+        
+            .section__restaurant {
+                margin-left: 0;
+                margin-right: 0;
+                .menu__name{
+                    margin-left: 5%;
+                }
+              }
+            .menu__card {
+                width: 90%;
+                margin-left: 5%;
+            }
+        
+
         footer {
             display: flex;
             flex-direction: column;
@@ -497,30 +528,35 @@
                 .footer__icon {
                     display: flex;
                     flex-direction: column;
+                    gap: 0px;
                 }
                     .footer__mentions {
                         display: flex;
                         flex-direction: column;
+                        gap: 0px;
+                        .footer__contact {
+                            margin-top: -10px;
+                        }
                     }
                 } 
-            
         
+        .icon__ustensils, .icon__handshake {
+            display: flex;
+            flex-direction: row;
+            align-items: baseline;
+            margin-bottom: -23px;
+            .ustensils {
+                margin-right: 6px;
+                
+            }
+        }       
+        .handshake {
+            margin-right: 14px;
+              
+        }
         .footer__logo {
             width: 139px;
             height: 27px;
-        }
-       
-        .section__restaurant {
-            margin-left: 0;
-            margin-right: 0;
-            width: 100%;
             }
-        .menu__card {
-            width: 90%;
-            margin-left: 5%;
         }
-        .menu__name {
-            margin-left: 5%;
-        }
-    
-        }
+    }
