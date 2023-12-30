@@ -26,6 +26,9 @@
                 margin-left: 10%;
             }
         }
+        .section__button--main i {
+            margin-right: 0%;
+        }
         .section__menus {
             padding: 30px 30px 0px 30px;
         }
@@ -58,7 +61,7 @@
             display: flex;
             flex-direction: column;
             .section__button--main {
-                width: 100%;
+                width: 100%;  
             }
             .section__button--number {
                 top: 3rem;
