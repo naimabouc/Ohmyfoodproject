@@ -1,0 +1,42 @@
+
+    footer {
+        background-color: #353535;
+        color: white;
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: flex-start;
+        padding: 30px 25px 30px 25px;
+        & .footer__main {
+            display: flex;
+            flex-direction: row;
+            align-items: baseline;
+            justify-content: flex-end;
+            & .footer__icon{
+                margin-right: 31px;
+                display: flex;
+                gap: 15px;
+                align-items: baseline;
+                & .icon__ustensils {
+                    flex-direction: row;
+                    display: flex;
+                    align-items: baseline;
+                    gap: 15px;
+                    
+                }
+            }
+        }
+    }   
+    .icon__handshake {
+        display: contents;
+        }
+        .footer__mentions {
+        display: flex;
+        align-items: baseline;
+        margin-right: 96px;
+        gap: 15px;
+        }
+        .contact {
+            color: white;
+        }
+        
+    

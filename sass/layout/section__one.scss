@@ -1,0 +1,21 @@
+@use "../utils/animations.scss";
+@use "../utils/colors.scss";
+@use "../utils/mixins.scss";
+
+.section__one {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: #F6F6F6;
+    padding-bottom: 3%;
+    & h1 {
+        font-size: 40px;    
+    }
+        & h2 {
+            font-size: 18px;
+            font-weight: 300;
+        }
+        & button {
+            @include button-gradient
+        }
+    }
