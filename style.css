@@ -264,7 +264,7 @@ footer .footer__main .footer__icon .icon__ustensils {
   align-items: center;
 }
 .section__menu--title h1 {
-  margin-right: 2%;
+  margin-right: 5%;
   font-family: "Shrikhand", serif;
   font-size: 28px;
   font-style: italic;
@@ -504,6 +504,7 @@ footer .footer__main .footer__icon .icon__ustensils {
   border-radius: 20px;
   border-style: none;
   background-color: rgb(246, 246, 246);
+  box-shadow: 2px 1px 8px -5px black;
 }
 .section__button--main i {
   margin-right: 7%;
@@ -525,7 +526,7 @@ footer .footer__main .footer__icon .icon__ustensils {
   height: 24px;
   border-radius: 24px;
   position: relative;
-  top: 1rem;
+  top: 2vh;
   left: 1%;
   background-color: #9356DC;
   color: white;
@@ -560,9 +561,15 @@ footer .footer__main .footer__icon .icon__ustensils {
     font-size: 24px;
     margin-left: 30px;
     margin-right: 30px;
+    margin-top: 40px;
   }
-  .section__one .section__title--h1 h2 {
+  .section__title--h2 {
     margin-left: 8px;
+    margin-top: 0px;
+  }
+  .section__one button {
+    margin-bottom: 40px;
+    margin-top: 5%;
   }
   .section__two .section__button {
     display: flex;
@@ -591,11 +598,19 @@ footer .footer__main .footer__icon .icon__ustensils {
     margin-right: 0;
   }
   .section__restaurant .menu__name {
-    margin-left: 5%;
+    margin-left: 3%;
   }
   .menu__card {
-    width: 90%;
-    margin-left: 5%;
+    width: 94%;
+    margin-left: 3%;
+  }
+  .section__menu--title {
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: -4%;
+  }
+  .section__menu--title h1 {
+    margin-right: 15%;
   }
   footer {
     display: flex;
