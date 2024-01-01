@@ -10,7 +10,6 @@ a {
 
 header {
   background-color: white;
-  margin-top: 2%;
 }
 header img {
   width: 197px;
@@ -360,8 +359,8 @@ footer .footer__main .footer__icon .icon__ustensils {
   left: 100%;
   background: #99E2D0;
   border-style: none;
-  margin-right: -3rem;
-  width: 3rem;
+  margin-right: -4rem;
+  width: 4rem;
   transition: all 0.5s;
   display: flex;
   justify-content: center;
