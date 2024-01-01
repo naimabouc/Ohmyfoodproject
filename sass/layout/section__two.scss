@@ -1,6 +1,6 @@
-@use "../utils/animations.scss";
-@use "../utils/colors.scss";
-@use "../utils/mixins.scss";
+@import "../utils/animations.scss";
+@import "../utils/colors.scss";
+@import "../utils/mixins.scss";
 
 
 
@@ -26,7 +26,7 @@
             &:hover {
                 background: lighten($color-button, 1%);
                 transition: transform 5s;
-                
+                box-shadow: 0px 0px 6px 0px #696969;      
         }
     }       
     .store {
@@ -42,7 +42,7 @@
         border-radius: 24px;
         position: relative;
         top: 2vh;
-        left: 1%;
+        transform: translateX(50%);
         background-color: $color-primary;
         color: white;
     }    

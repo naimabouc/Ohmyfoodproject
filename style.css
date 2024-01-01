@@ -236,7 +236,8 @@ footer .footer__main .footer__icon .icon__ustensils {
   -webkit-background-clip: text;
   -moz-background-image: linear-gradient(to top, #9356DC 20%, #FF79DA 100%);
   opacity: 0;
-  transition: all 200ms;
+  transition-property: all;
+  transition-duration: 1200ms;
 }
 .fas:hover {
   opacity: 1;
@@ -394,6 +395,7 @@ footer .footer__main .footer__icon .icon__ustensils {
 .section__button--gradient:hover {
   background: #fface8;
   transition: transform 0.5s;
+  box-shadow: 5px 5px 18px 3px #868686;
 }
 
 /*** Animations***/
@@ -456,6 +458,7 @@ footer .footer__main .footer__icon .icon__ustensils {
 .section__one button:hover {
   background: #fface8;
   transition: transform 0.5s;
+  box-shadow: 5px 5px 18px 3px #868686;
 }
 
 /*** Animations***/
@@ -513,6 +516,7 @@ footer .footer__main .footer__icon .icon__ustensils {
 .section__button--main:hover {
   background: #f9f9f9;
   transition: transform 5s;
+  box-shadow: 0px 0px 6px 0px #696969;
 }
 
 .store {
@@ -528,7 +532,7 @@ footer .footer__main .footer__icon .icon__ustensils {
   border-radius: 24px;
   position: relative;
   top: 2vh;
-  left: 1%;
+  transform: translateX(50%);
   background-color: #9356DC;
   color: white;
 }
@@ -615,6 +619,7 @@ footer .footer__main .footer__icon .icon__ustensils {
   }
   .section__menu--title h1 {
     margin-right: 15%;
+    margin-left: 2%;
   }
   footer {
     display: flex;
